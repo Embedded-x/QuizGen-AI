@@ -1,104 +1,85 @@
+<div align="center">
+
 # 🤖 QuizGen AI
 
-An AI-powered Quiz Generator that creates high-quality multiple-choice quizzes from any topic using Large Language Models. Built with **React**, **FastAPI**, and **OpenRouter AI**, QuizGen AI helps students, educators, and professionals generate quizzes instantly.
+### AI-Powered Quiz Generator using React, FastAPI & OpenRouter
+
+Generate high-quality multiple-choice quizzes on any topic in seconds.
+
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.116-009688?logo=fastapi)
+![Python](https://img.shields.io/badge/Python-3.13-3776AB?logo=python)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+</div>
 
 ---
 
-## ✨ Features
+# 📖 Overview
+
+QuizGen AI is an AI-powered web application that automatically generates multiple-choice quizzes from any topic using Large Language Models through the OpenRouter API.
+
+The project combines a modern React frontend with a FastAPI backend and is fully containerized using Docker.
+
+---
+
+# ✨ Features
 
 - 🤖 AI-powered quiz generation
-- 📝 Generate quizzes on any topic
+- 📚 Generate quizzes on any topic
 - 🎯 Custom number of questions
-- 📚 Multiple-choice questions (MCQs)
-- 📋 One-click copy quiz
-- 📄 Download quiz as PDF
+- 📋 Copy quiz with one click
+- 📄 Download quizzes as PDF
 - ⚡ Progressive question reveal
-- 🎨 Modern and responsive UI
-- 🔒 REST API powered by FastAPI
+- 🎨 Responsive modern UI
 - 🐳 Docker support
+- 🔥 FastAPI REST API
+- 🌐 OpenRouter AI integration
 
 ---
 
-## 🖼️ Preview
+# 🛠 Tech Stack
 
-> Add screenshots here after deployment.
-
-### Home Page
-
-```
-/screenshots/home.png
-```
-
-### Generated Quiz
-
-```
-/screenshots/quiz.png
-```
+| Category | Technology |
+|----------|------------|
+| Frontend | React, Vite, CSS |
+| Backend | FastAPI, Python |
+| AI | OpenRouter API |
+| PDF | jsPDF |
+| HTTP | Axios |
+| Containerization | Docker |
+| Version Control | Git & GitHub |
 
 ---
 
-## 🛠️ Tech Stack
+# 📂 Project Structure
 
-### Frontend
-
-- React
-- Vite
-- CSS3
-- Axios
-
-### Backend
-
-- FastAPI
-- Python
-- Uvicorn
-
-### AI
-
-- OpenRouter API
-- Large Language Models (LLMs)
-
-### Tools
-
-- Docker
-- Git
-- GitHub
-
----
-
-## 📂 Project Structure
-
-```
+```text
 QuizGen-AI/
 │
 ├── backend/
 │   ├── app/
-│   │   ├── routes/
-│   │   ├── services.py
-│   │   ├── main.py
-│   │   └── config.py
-│   │
+│   ├── Dockerfile
 │   ├── requirements.txt
-│   └── Dockerfile
+│   └── .env.example
 │
 ├── frontend/
 │   ├── src/
-│   │   ├── components/
-│   │   ├── services/
-│   │   ├── App.jsx
-│   │   └── App.css
-│   │
-│   ├── package.json
-│   └── Dockerfile
+│   ├── public/
+│   ├── Dockerfile
+│   └── package.json
 │
 ├── docker-compose.yml
+├── LICENSE
 └── README.md
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
-### Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/EMBEDDED-X/QuizGen-AI.git
@@ -108,7 +89,7 @@ cd QuizGen-AI
 
 ---
 
-### Backend
+## Backend
 
 ```bash
 cd backend
@@ -124,7 +105,7 @@ uvicorn app.main:app --reload
 
 ---
 
-### Frontend
+## Frontend
 
 ```bash
 cd frontend
@@ -136,9 +117,9 @@ npm run dev
 
 ---
 
-## 🔑 Environment Variables
+# 🔑 Environment Variables
 
-Create a `.env` file inside the backend directory.
+Create a `.env` file inside the backend folder.
 
 ```env
 OPENROUTER_API_KEY=your_api_key_here
@@ -148,15 +129,15 @@ MODEL=openrouter/free
 
 ---
 
-## 🐳 Docker
+# 🐳 Docker
 
-Build containers
+Build the containers
 
 ```bash
 docker compose build
 ```
 
-Run containers
+Run the application
 
 ```bash
 docker compose up
@@ -170,32 +151,44 @@ docker compose down
 
 ---
 
-## 🚀 Future Enhancements
+# 📡 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/generate-quiz` | Generate AI Quiz |
+| GET | `/docs` | Swagger UI |
+| GET | `/openapi.json` | API Schema |
+
+---
+
+# 🚀 Future Enhancements
 
 - User Authentication
 - Quiz History
 - Difficulty Levels
-- Subject Categories
-- Timer Mode
+- Category Selection
 - Leaderboard
 - Dark Mode
-- Quiz Sharing
+- Voice-based Quiz Generation
+- Image-based Quiz Generation
 - Export to Word
 - Export to Excel
-- Speech-to-Quiz
-- Image-based Quiz Generation
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-| Home | Quiz |
-|------|------|
-| Add Screenshot | Add Screenshot |
+> Screenshots will be added after deployment.
+
+- Home Page
+- Quiz Generation
+- PDF Download
+- Docker Running
+- API Documentation
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Tarun Garg**
 
@@ -203,6 +196,6 @@ GitHub: https://github.com/EMBEDDED-X
 
 ---
 
-## 📜 License
+# 📜 License
 
 This project is licensed under the MIT License.
