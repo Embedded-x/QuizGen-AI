@@ -1,0 +1,40 @@
+# ==========================
+# Python
+# ==========================
+backend/venv/
+backend/__pycache__/
+backend/**/*.pyc
+backend/.pytest_cache/
+
+# Environment
+backend/.env
+
+# ==========================
+# Node
+# ==========================
+frontend/node_modules/
+frontend/dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# VS Code
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+
+# Python
+*.pyo
+*.pyd
+
+# Coverage
+coverage/
+htmlcov/
