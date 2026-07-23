@@ -5,13 +5,15 @@ from app.routes import router
 
 app = FastAPI(title="QuizGen AI")
 
+origins = [
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://quiz-gen-ai-amber.vercel.app",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://localhost:5174",
-        "https://quiz-gen-ai-amber.vercel.app",
-    ],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
